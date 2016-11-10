@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/toTab.js"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lightbox.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+				$('#dowebok').fullpage({
+					sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+					anchors: ['page1', 'page2', 'page3', 'page4'],
+					menu: '#menu',
+					loopBottom:true,
+					scrollBar:true,
+				});
+				$("html").css("overflow","hidden");
+				
+				setInterval(function(){
+				      $.fn.fullpage.moveSlideRight();
+			    }, 5000);
+				new WOW().init();
+				$(".sgw").hover(function(){
+					var num=$(this).index();
+				 $(".sgw span").eq(num).animate({"top":0},500);
+				},function(){
+					var num=$(this).index();
+					 $(".sgw span").eq(num).animate({"top":"-180px"},500);
+				})
+				$("#lsdg ul li").tab("ho",$(".con"));
+			});
+			
+		</script>
+		<style>
+     html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li><a href="index.html">曹魏故都</a>
+				<ul id="menu">
+					<li data-menuanchor="page1" class="active" style="border: none;"><a href="#page1">靓丽风景</a></li>
+					<li data-menuanchor="page2"><a href="#page2">地方美食</a></li>
+					<li data-menuanchor="page3"><a href="#page3">特色景点</a></li>
+				</ul>
+			</li>
+			<li class="navactive"><a href="别样春秋.html">别样春秋</a></li>
+			<li><a href="lamei.html">腊梅芬芳</a></li>
+			<li><a href="xinmao.html">古都新貌</a></li>
+			<ul class="userl">
+				<li><a href="login.html">登录</a></li>
+				<li><a href="login.html">注册</a></li>
+			</ul>
+		</ul>
+		<div id="dowebok">
+			<div class="section">
+				 <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="img/fj1.jpg"/></div>
+			            <div class="swiper-slide"><img src="img/fj2.jpg"/></div>
+			            <div class="swiper-slide"><img src="img/fj3.jpg"/></div>
+			            <div class="swiper-slide"><img src="img/fj4.jpg"/></div>
+			            <div class="swiper-slide"><img src="img/fj5.jpg"/></div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			</div>
+			<div class="section" id="foods">
+				<div id="food">
+				<div class="rdf wow slideInLeft">
+					<img src="img/rdf.jpg" alt="" />
+					<p>热豆腐是利用大豆蛋白制成的高营养食品。人体对其吸收率可达92～98%，豆腐除蛋白质外，还可为人体生理活动提供多种维生素和矿物质，尤其是钙、磷等。特别是用葡萄糖酸内脂作凝固剂，不仅制出成品多，而且含钙量有所增加，对防冶软骨病及牙齿发育不良等病有一定的功效。同时，热豆腐不含胆固醇，有防止动脉化等功效。因此，男女老幼皆宜的佳美食品。</p>
+				</div>
+				<div class="yrt wow slideInLeft">
+					<img src="img/yrt.jpg" alt="" />
+					<p>许昌位于中原之中，并非大量产羊之地，但许昌人爱吃羊肉，光羊肉汤就有多种做法，有名的就有丈地羊肉汤，艾记羊肉汤，吴家羊肉汤……这几种羊肉汤做法不同，唯吴家羊肉汤最受欢迎。</p>
+				</div>
+				<div class="dgc wow slideInLeft">
+					<img src="img/dgc.jpg" alt="" />
+					<p>大锅菜又叫熬菜、烩菜，是许昌人最爱吃的地方菜，即便在大酒店里吃过酒席，还常有客人提出，弄碗熬菜吧！大锅菜应当是普通百姓的食物，在以前并非是想吃就吃的，只有在办红白喜事、过年过节时，人们才能吃到。如果在平时吃上一顿大锅菜，就算是改善生活了。记忆中吃得最香的大锅菜是1977年在禹县浅井公社，那时，我正在那里当知青，那年冬至，我们在工地挖河，那么多民工，自然是吃不上饺子，中午吃的就是大锅菜，尽管只有几片肥肉，菜是香极了。</p>
+				</div>
+				</div>
+			</div>
+			<style type="text/css">
+				.rdf,.dgc,.yrt{width: 680px;height: 190px;}
+				#food {width: 700px;height: 600px;margin: 0 auto;margin-top: 50px; text-align: center;}
+				#foods img{width: 150px;height: 150px;border-radius: 50%; float: left;display: inline-block;}
+				#foods p{width: 400px;height: 100px;float: right; margin: 30px 0 0 -150px; display: inline-block;}
+				.tsjd1 {margin-top: 180px; width: 700px;height: 600px;margin: 0 auto; font-size: 20px;}
+				.tsjd1 p{width: 680px;}
+			</style>
+			<div class="section" id="tsjd">
+				<div class="tsjd1">
+				<h3>曹丞相府</h3>
+				<p>曹丞相府景区位于许昌市老城中心的繁华地带，是国内第一个全方位展示东汉末年曹魏文化的主题景区，也是许昌市重点旅游项目。曹丞相府景区主体建筑为仿汉代风格，景区主要有魏武游园、曹操塑像、艺术照壁、府衙、东西望楼、求贤堂、议事堂、赋诗楼、围廊、藏兵洞、相府花园、青梅亭、宴楼、浴楼、珍宝馆等标志性建筑群构成，景区外围有帝王街、将相街、才子街、佳人街、三国演义大舞台等旅游配套项目与之相辅相成。</p>
+				<h3>灞陵桥</h3>
+				<p>灞陵桥景区是以桥、庙、园为一体的古典园林，是集旅游、娱乐、休闲多元功能的综合性园区。园林不仅规模大而且内容复杂多样，在大园中又围成若干小园的有“青梅园”，占地2470平方米，内有人工湖、青梅亭、假山等，错落于湖面之上，别有洞天。“桃园”内有结义亭、放生池等，形成了园中园。全园分别有多个景点组成，每一处景点都有其独特的主体，意境和情趣；有“垂钓村”，“九宫八卦阵”，“弓箭射击”场，另有水面一处，面积为30900平方米，有河心岛、曲桥，并设有游乐船。旅游服务中心位于景区入口处，各项服务设施齐全，免费向游客提供雨伞、茶水、针线包、各类景区宣传品等。</p>
+				<h3>汉张公祠</h3>
+				<p>汉张公祠亦称张公庙，清代又塑包公像于殿内，故又称包公寨，位于许昌县张潘古城西北部，距许昌市18公里。距张潘镇汉魏故城遗址毓秀台1.5公里，市县级文物保护单位，也是汉魏故城遗址的重要组成部分。</p>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			 var vW=$(".swiper-wrapper").width();
+			 var vH=$(".swiper-wrapper").height();
+			 $(".swiper-wrapper img").css("width",vW);
+			 $(".swiper-wrapper img").css("height",vH);
+		})
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        parallax: true,
+		        speed: 600,
+		    });
+		</script>
+	</body>
+</html>

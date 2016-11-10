@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<!--<link rel="stylesheet" href="css/screen.css" />-->
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/toTab.js"></script>
+		<script src="js/lightbox.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+				$('#dowebok').fullpage({
+					sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+					anchors: ['page1', 'page2', 'page3', 'page4'],
+					menu: '#menu',
+					loopBottom:true,
+					scrollBar:true,
+				});
+				$("html").css("overflow","hidden");
+				
+				setInterval(function(){
+				      $.fn.fullpage.moveSlideRight();
+			    }, 5000);
+				new WOW().init();
+				$(".sgw").hover(function(){
+					var num=$(this).index();
+				 $(".sgw span").eq(num).animate({"top":0},500);
+				},function(){
+					var num=$(this).index();
+					 $(".sgw span").eq(num).animate({"top":"-180px"},500);
+				})
+				$(".nav>li").navac("navactive",$(".nav>li"));
+				
+				$("#lsdg ul li").tab("ho",$(".con"));
+			});
+		</script>
+	</head>
+	<body style="overflow: hidden;">
+		<ul class="nav">
+			<li class="navactive"><a href="">曹魏故都</a>
+				<ul id="menu">
+					<li data-menuanchor="page1" class="active" style="border: none;"><a href="#page1">关于许昌</a></li>
+					<li data-menuanchor="page2"><a href="#page2">三国文化</a></li>
+					<li data-menuanchor="page3"><a href="#page3">历史人物</a></li>
+					<li data-menuanchor="page4"><a href="#page4">历史典故</a></li>
+				</ul>
+			</li>
+			<li><a href="别样春秋.html">别样春秋</a></li>
+			<li><a href="lamei.html">腊梅芬芳</a></li>
+			<li><a href="xinmao.html">古都新貌</a></li>
+			<ul class="userl">
+				<li><a href="login.html">登录</a></li>
+				<li><a href="login.html">注册</a></li>
+			</ul>
+		</ul>
+		<div id="dowebok">
+			<div class="section" id="aboutxc">
+				<h2 class="wow slideInRight">许昌</h2>
+				<h4 class="wow slideInRight">莲城</h2>
+				<p class="wow slideInLeft">许昌，又称莲城，为河南省省辖市，下辖二市(禹州、长葛)、三县(许昌、鄢陵、襄城)、一区(魏都)，现有面积4996平方公里，人口447万。许昌近几年先后被评定为中国优秀旅游城”和“国家优秀园林城”。许昌有“魏都”、“钧都”、“花都”之称。在中原城市群建设中许昌具有良好的区位优势和发展前景。许昌地处中原腹地，是历史文化名城。古遗迹、遗址众多。从太昊伏羲到轩辕黄帝，从上古高士许由到音乐始祖葛天氏，从大禹治水到夏启建都等，中华民族发展史在许昌留下了许多闪光的足迹。</p>
+			</div>
+			<div class="section" id="sgwh">
+				<div class="blq sgw wow bounceInLeft">
+					<a href="img/blq.jpg"  data-lightbox="road2" data-title="灞陵桥，原名八里桥，在许昌市城西4公里的清泥河上，相传为三国名将关羽辞曹挑袍处，灞陵桥从此名扬天下。"><img src="img/blq.png"><span>灞陵桥</span></a>
+				</div>
+				<div class="cql sgw wow bounceInDown">
+					<a href="img/cql.jpg"  data-lightbox="road2" data-title="春秋楼,又名大节亭，曾以关公宅，关王庙，武安王庙，两院英风庙，关帝庙称之。位于许昌市中心文庙前街中段，为明清风格建筑群。"><img src="img/cql.png"><span>春秋楼</span></a>
+				</div>
+				<div class="cxf sgw wow bounceInRight">
+					<a href="img/cxf.jpg"  data-lightbox="road2" data-title="曹丞相府是曹操处理军国大事的地方，奠定曹魏霸业的屯田令和求贤令都在这里诞生。据史料记载，曹操于建安年间迎汉献帝于许昌，进位丞相，挟天子以令诸侯，加九锡，封魏王。后曹丕篡汉，曹氏府第由相府而王府，复又演变为皇宫。"><img src="img/cxf.png"><span>曹丞相府</span></a>
+				</div>
+			</div>
+			<div class="section" id="lsrw">
+				<div class="rwlb">
+					<div class="slide xy fl ">
+						<img src="img/xy.gif"/>
+						<p>许由，一作许繇，字武仲，一字道开，是上古时代一位高尚清节之士。相传尧帝要把君位让给他，他推辞不受，逃于箕山下，农耕而食；尧帝又让他做九州长官，他到颍水边洗耳，表示不愿听到这些世俗浊言。后世把许由和与他同时代的隐士巢父，并称为巢由或巢许，用以指代隐居不仕者。尧、舜禅让的故事，作为民主思想的最早典范，成为千古美谈，许由也因此成为古代隐士中最早名声显赫的一位。据传他曾做过尧、舜、禹的老师，后人因此亦称他为“三代宗师”。</p>
+					</div>
+					<div class="cc fl slide">
+						<img src="img/cc.gif"/>
+						<p>曹操（155年－220年3月15日），字孟德，一名吉利，小字阿瞒，沛国谯县（今安徽亳州）人。东汉末年杰出的政治家、军事家、文学家、书法家，三国中曹魏政权的奠基人。东汉末年，天下大乱，曹操以汉天子的名义征讨四方，对内消灭二袁、吕布、刘表、马超、韩遂等割据势力，对外降服南匈奴、乌桓、鲜卑等，统一了中国北方，并实行一系列政策恢复经济生产和社会秩序，奠定了曹魏立国的基础。曹操在世时，担任东汉丞相，后为魏王，去世后谥号为武王。其子曹丕称帝后，追尊为武皇帝，庙号太祖。</p>
+					</div>
+					<div class="zy fl slide">
+						<img src="img/zy.gif"/>
+						<p>钟繇（yáo，一作yóu）（151年－230年），字元常。颍川长社（今河南许昌长葛东）人。三国时期曹魏著名书法家、政治家。钟繇早年相貌不凡，聪慧过人。历任尚书郎、黄门侍郎等职，助汉献帝东归有功，封东武亭侯。后被曹操委以重任，为司隶校尉，镇守关中，功勋卓著。以功迁前军师。魏国建立，任大理，又升为相国。曹丕称帝，为廷尉，进封崇高乡侯。后迁太尉，转封平阳乡侯。与华歆、王朗并为三公。明帝继位，迁太傅，进封定陵侯。太和四年（230年）卒，谥曰成。</p>
+					</div>
+					<div class="wdz fl slide">
+						<img src="img/wdz.gif"/>
+						<p>吴道子，（约公元680～759年），唐代著名画家，画史尊称画圣，又名道玄。汉族，阳翟（今河南禹州）人。约生于公元680（永隆元年） ，卒于公元758（乾元元年）前后。少孤贫，年轻时即有画名。曾任兖州瑕丘（今山东滋阳）县尉，不久即辞职。后流落洛阳，从事壁画创作。开元年间以善画被召入宫廷，历任供奉、内教博士、宁王友。曾随张旭、贺知章学习书法，通过观赏公孙大娘舞剑，体会用笔之道。擅佛道、神鬼、人物、山水、鸟兽、草木、楼阁等，尤精于佛道、人物，长于壁画创作</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="lsdg">
+				<ul>
+					<li class="ho"><img src="img/xyxr.gif"/></li>
+					<li><img src="img/tangju.gif" alt="唐雎不辱使命"/></li>
+					<li><img src="img/zhujiu.gif" alt="煮酒论英雄"/></li>
+				</ul>
+				<div id="dglb">
+					<div class="con">
+						<p>汉蔡邕《琴操·河间杂歌·箕山操》：许由“以清节闻于尧。尧大其志，乃遣使以符玺禅为天子。于是许由喟然叹曰：‘匹夫结志，固如盘石。采山饮河，所以养性，非以求禄位也；放发优游，所以安己不惧，非以贪天下也。’使者还，以状报尧，尧知由不可动，亦已矣。于是许由以使者言为不善，乃临河洗耳。樊坚见由方洗耳，问之：‘耳有何垢乎？’由曰：‘无垢，闻恶语耳。’坚曰：‘何等语者？’由曰；‘尧聘吾为天子。’坚曰：‘尊位何为恶之？’由曰：‘吾志在青云，何仍劣劣为九州伍长乎？’于是樊坚方且饮牛，闻其言而去，耻饮于下流。”◇皇甫谧《高士传·巢父》谓许由将尧禅位予己事告巢父，“巢父曰：‘汝何不隐汝形，藏汝光，若非吾友也。’出其膺而下之。由怅然不自得，乃过清泠之水洗其耳，拭其目。”《高士传·许由》载：“尧让天下于许由……由不欲闻之，洗其耳于颖水滨时，其友巢父牵犊欲饮之，见由洗耳……巢父曰：‘子若处高岸深谷，人道不通，谁能见子，子故浮游欲闻求其名誉，污吾犊口！’牵犊上流饮之。”</p>
+					</div>
+					<div class="con">
+						<p>《唐雎不辱使命》选自《战国策·魏策四》，题目为后人所加。公元前225年，即秦始皇二十二年，秦国灭掉魏国之后，想以“易地”之名占领安陵，安陵君派唐雎出使秦国，最终折服秦王，这篇文章写的就是唐雎完成使命的经过。文章内容精彩，情节完整，引人人胜；人物形象生动，秦王的色厉内荏、前倨后恭，唐雎的不畏强暴、英勇沉着，都写得栩栩如生</p>
+					</div>
+					<div class="con">
+						<p>东汉末，曹操挟天子以令诸候，势力大；刘备虽为皇叔，却势单力薄，为防曹操谋害，不得不在住处后园种菜，亲自浇灌，以为韬晦之计。关云长和张飞蒙在鼓中，说刘备不留心天下大事，却学小人之事。一天，刘备正在浇菜，曹操派人请刘备，刘备只得胆战心惊地一同前往入府见曹操。曹操不动声色对刘备说，“在家做得大好事！”说者有意，听者更有心，这句话将刘备吓得面如土色，曹操又转口说，你学种菜，不容易，这才使刘备稍稍放心下来。曹操说，则才看见园内枝头上的梅子青青的，想起以前一件往事（即“望梅止渴”），今天见此梅，不可不赏，恰逢煮酒正熟，故邀你到小亭一会。刘备听后心神方定。随曹操来到小亭，只见已经摆好了各种酒器，盘内放置了青梅，于是就将青梅放在酒樽中煮起酒来了，二人对坐，开怀畅饮。酒至半酣，突然阴云密布，大雨将至，曹操大谈龙的品行，又将龙比作当世英雄，问刘备，请你说说当世英雄是谁，刘备装作胸无大志的样子，说了几个人，都被曹操否定。 曹操此时正想打听刘备的心里活动，看他是否想称雄于世，与是说：“夫英雄者，胸怀大志，腹有良谋，有包藏宇宙之机，吞吐天下之志者也。”刘备问，谁能当英雄呢？曹操单刀直入地说：“当今天下英雄，只有你和我两个！刘备一听，吃了一惊，手中拿的筷子，也不知不觉地掉下地下。正巧突然下大雨，雷声大作，刘备灵机一动，从容地低下身拾起筷子，说是因为害怕打雷，才掉了筷子。曹操此时才放心地说，大丈夫也怕雷吗？刘备说，连圣人对迅雷烈风也会失态，我还能不怕吗？刘备经过这样的掩饰，使曹操认为自己是个胸无大志，胆小如鼠的庸人，曹操从此再也不疑刘备了。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

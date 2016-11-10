@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#dowebok').fullpage({
+					
+					anchors: ['page1', 'page2', 'page3', 'page4'],
+					menu: '#menu',
+					scrollBar:true
+				});
+				new WOW().init();
+//				$(window).resize(function(){
+//			        autoScrolling();
+//			    });
+//			
+//			    function autoScrolling(){
+//			        var $ww = $(window).width();
+//			        if($ww < 1024){
+//			            $.fn.fullpage.setAutoScrolling(false);
+//			        } else {
+//			            $.fn.fullpage.setAutoScrolling(true);
+//			        }
+//			    }
+//			
+//			    autoScrolling();
+			});
+		</script>
+	</head>
+	
+	<body>
+		<ul class="nav">
+			<li><a href="">曹魏故都</a>
+				<ul id="menu">
+					<li data-menuanchor="page1" class="active" style="border: none;"><a href="#page1">关于许昌</a></li>
+					<li data-menuanchor="page2"><a href="#page2">三国文化</a></li>
+					<li data-menuanchor="page3"><a href="#page3">历史人物</a></li>
+					<li data-menuanchor="page4"><a href="#page4">历史典故</a></li>
+				</ul>
+			</li>
+			<li><a href="javascript:;">别样春秋</a></li>
+			<li><a href="javascript:;">腊梅芬芳</a></li>
+			<li><a href="javascript:;">古都新貌</a></li>
+		</ul>
+
+		<div id="dowebok">
+			<div class="section" id="aboutxc">
+				<!--<img src="img/xc.jpg"/><-->
+					<h2 class="wow slideInRight">许昌</h2>
+					<h4 class="wow slideInRight">莲城</h2>
+					<p class="wow slideInLeft">许昌，又称莲城，为河南省省辖市，下辖二市(禹州、长葛)、三县(许昌、鄢陵、襄城)、一区(魏都)，现有面积4996平方公里，人口447万。许昌近几年先后被评定为中国优秀旅游城”和“国家优秀园林城”。许昌有“魏都”、“钧都”、“花都”之称。在中原城市群建设中许昌具有良好的区位优势和发展前景。许昌地处中原腹地，是历史文化名城。古遗迹、遗址众多。从太昊伏羲到轩辕黄帝，从上古高士许由到音乐始祖葛天氏，从大禹治水到夏启建都等，中华民族发展史在许昌留下了许多闪光的足迹。</p>
+			
+			</div>
+			<div class="cb"></div>
+			<div class="section" id="sgwh">
+				<div class="cql">
+					<img src="img/cql.png" alt="" />
+					<span>春秋楼</span>
+					
+				</div>
+				<div class="blq">
+					<img src="img/blq.png"/>
+					<span>霸陵桥</span>
+					
+				</div>
+				<div class="cxf">
+					<img src="img/cxf.png"/>
+					<span>丞相府</span>
+					
+				</div>
+			</div>
+			<div class="section">
+				
+			</div>
+			<div class="section">
+				
+			</div>
+		</div>
+	</body>
+</html>

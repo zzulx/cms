@@ -1,0 +1,51 @@
+
+.cb{clear: both;}
+@font-face {
+	font-family:"lishu";
+	src: url(../font/FZLBJW.TTF);
+}
+.fl{float: left;}
+*{padding: 0;margin: 0;font-family: "隶书"}
+a{text-decoration: none;}
+.nav{font-size: 0; position: fixed;top: 0;left: 0;z-index: 70;width:100%;height: 70px;padding-left: 300px;
+background-image: url(../img/navbg.gif);background-repeat: no-repeat;background-color: brown;background-size: 100% 71px;}
+.nav>li{text-align: center; list-style: none;float: left; height: 70px;line-height: 70px;width: 150px;font-size: 22px;font-weight: bold;}
+li a{color: #fff;}
+.navactive>a{color: #000;}
+#menu{position:fixed;top:15%;left:12%;}
+#menu li a{display: inline-block;width: 70px;height: 35px;color: #777777;}
+#menu li{background: url(../img/a.gif); list-style: none;text-align: center;font-weight:normal; width: 70px;height: 35px;border-top:1px dashed darksalmon ;font-size: 15px;line-height: 35px;}
+#menu .active a{background: url(../img/b.gif); }
+.userl{position: fixed;top: 0 ; right: 150px;z-index: 90;font-size: 16px;}
+.userl li {display: inline-block;}.userl li a{color: #000;}
+#aboutxc {position: relative; background-image: url(../img/aboutxc-bg.jpg);background-repeat: no-repeat;background-position: center 70px;background-size: 100% 100%;}
+#aboutxc h2{width: 70px;height: 100px;font-size: 40px;font-weight: bolder;position: absolute;right: 25%;top: 15%;}
+#aboutxc h4{width: 70px;height: 100px;font-size: 40px;font-weight: bolder;position: absolute;right: 22%;top: 12%;}
+#aboutxc p{text-align: justify; width: 550px;font-size: 20px;position: absolute;left: 12%;bottom: 10%;}
+
+#sgwh{position: relative; background-image: url(../img/timg.jpg);background-size: 100% 100%; background-repeat: no-repeat; }		
+#sgwh div{overflow: hidden; display: inline-block; position: absolute;bottom: 10%;}
+#sgwh span{text-align: center;font-size: 20px;color: #000000;line-height: 180px;font-weight: bold; border-radius: 50%; display: inline-block; position: absolute;width: 180px;height: 180px;}
+#sgwh img{width: 180px;height: 180px;}.sgw{cursor: pointer;}
+.cql{left: 35%;top:30%;height: 180px;}
+.cql span{left: 0;top:-180px;background:rgba(255,255,255,0.5);}
+.blq span{left: 0;top:-180px;background:rgba(255,255,255,0.5);}
+.cxf span{left: 0;top:-180px;background:rgba(255,255,255,0.5);}
+.blq{left: 20%;}.cxf{left:50%}
+#lsrw{ background-image: url(../img/rwbj.jpg);background-size: 100% 100%; background-repeat: no-repeat;}
+.rwlb{width: 680px; height: 800px;margin: 0 auto;overflow: hidden;}
+.rwlb img{width: 160px;height: 215px;margin-top: 70px;}
+.rwlb p{margin: 50px auto;width: 400px;}			
+.xy{width: 500px;height: 600px;text-align: center;background: transparent;}
+.cc{width: 500px;height: 600px;text-align: center;background: transparent;}
+.zy{width: 500px;height: 600px;text-align: center;background: transparent;}
+.wdz{width: 500px;height: 600px;text-align: center;background: transparent;}
+#lsdg{background-image: url(../img/dgbj.jpg);background-repeat: repeat;position: relative;}
+#lsdg ul{width: 900px;height: 150px;bottom:10%;left: 50%;margin-left: -400px; text-align: center;font-size: 0;position: absolute;border: 3px solid brown;}
+#lsdg ul li{display: inline-block; width: 32%;height: 150px;background: burlywood;font-size: 20px;margin: 0 3px;overflow: hidden;}
+#dglb{ width: 900px;height: 250px;position: absolute;bottom:33%;left: 50%;margin-left: -400px;overflow: hidden;border-top: 3px solid brown;border-left: 3px solid brown; border-right: 3px solid brown;}
+.con { width: 900px;height: 350px;background: blanchedalmond;}
+.con p{text-indent: 2rem; font-size: 20px; }
+
+#tsjd{position: relative; background-image: url(../img/msbj.jpg);background-size: 100% 100%; background-repeat: no-repeat; }		
+#foods{position: relative; background-image: url(../img/bj1.jpg);background-size: 100% 100%; background-repeat: no-repeat; }		
